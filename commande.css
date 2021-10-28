@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+/* choix du service */
+#service ul
+{
+    display: flex;
+    flex-direction: column;
+    float: center;
+    margin-right: 40px;
+    background-color: transparent;
+}
+#service li
+{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    background-color: transparent;
+}
+#service a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#service a:hover
+{
+    color: #3498db;
+    text-decoration: underline;
+}
+#service h2
+{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Section Commande */
+txt
+{
+    margin-top: 3px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+offre
+{
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+}
+offre span
+{
+    text-decoration: underline;
+}
+
+* {
+    text-align: center;
+    color: white;
+    font-family: "Poppins, sans-serif";
+}
+
+.upbar {
+  background-color: whitesmoke;
+  border: 4px solid red;
+  border-radius: 20px;
+}
+
+.button-upbar {
+  background-color: transparent;
+  border: solid;
+  border-color: rgb(87, 0, 87);
+  border-radius: 15px;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.button-upbar:hover {
+  border-radius: 20px;
+}
+
+#container {
+    opacity: 1;
+}
+
+.center-align {
+    text-align: center;
+}
+
+p {
+    font-size: 27px;
+}
+
+input {
+    font-size: 25px;
+    text-align: left;
+    background-color: rgb(77, 77, 77);
+    width: 60%;
+    padding: 20px;
+    border: 2px solid rgb(134, 134, 134);
+}
+
+input:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#btn {
+    width: 35%;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 25px;
+    padding: 17px;
+    background-color: #234bff;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+#btn:hover { 
+    background-color: #233eff;
+}
+
+h2
+{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #3498db;
+    font-family: "Poppins, sans-serif"
+}
+
+h2 span
+{
+    color: #3498db;
+    font-size: 35px;
+}

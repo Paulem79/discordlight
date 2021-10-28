@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: black;
+}
+body
+{
+    font-family: Poppins, sans-serif;
+}
+/* header */
+nav
+{
+    height: 80px;
+    width: 100%;
+    background-color: #34495e;
+}
+label.logo
+{
+    font-size: 35px;
+    font-weight: bold;
+    color:#fff;
+    padding: 0 100px;
+    line-height: 80px;
+    background-color: transparent;
+}
+nav ul
+{
+    float: right;
+    margin-right: 40px;
+    background-color: transparent;
+}
+nav li
+{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    background-color: transparent;
+}
+nav a
+{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+a.active, nav a:hover
+{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+nav #icon
+{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+}
+@media (max-width: 1048px)
+{
+    label.logo
+    {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul
+    {
+        margin-right: 20px;
+    }
+    nav a
+    {
+        font-size: 17px;
+    }
+
+}
+@media (max-width: 908px)
+{
+    nav #icon
+    {
+        display: block;
+    }
+    nav ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav li
+    {
+        display: block;
+        margin: 50px 0;
+    }
+    nav a
+    {
+        font-size: 20px;
+    }
+    a.active, a:hover
+    {
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show
+    {
+        left: 0;
+    }
+}
+/* fin du header */
+
+/* landing */
+section#landing
+{
+    margin: 30px;
+}
+section#landing h2
+{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #3498db;
+}
+section#landing h2 span
+{
+    color: #3498db;
+    font-size: 35px;
+}
+section#landing p
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+section#landing a
+{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    cursor: pointer;
+}
+section#landing a:hover
+{
+    color: #3498db;
+}
+/* service section */
+
+.container
+{
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.container .serviceBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background-color: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px;
+}
+.container .serviceBox .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox:hover .icon
+{
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+    background-color: transparent;
+}
+.container .serviceBox .icon ion-icon
+{
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0s;
+    background-color: transparent;
+}
+.container .serviceBox:hover .icon ion-icon
+{
+    font-size: 2em;
+    transition-delay: 0s;
+    background-color: transparent;
+}
+.container .serviceBox .content
+{
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+    background-color: transparent;
+}
+.container .serviceBox:hover .content
+{
+    transform: scale(1);
+    transition-delay: 0.25s;
+    background-color: transparent;
+}
+.container .serviceBox .content h2
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+.container .serviceBox .content p
+{
+    font-weight: 300;
+    line-height: 1.5em;
+    background-color: transparent;
+}
+.container .serviceBox .icon i
+{
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0s;
+    background-color: transparent;
+}
+.container .serviceBox:hover .icon i
+{
+    font-size: 2em;
+    transition-delay: 0s;
+    background-color: transparent;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Offres JavaScript</title>
+  <meta name="description" content="Offres JavaScript à commander !">
+  <meta name="title" content="Offres JavaScript">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="commande.css" type="text/css">
+</head>
+
+<body>
+  <!-- header -->
+	<nav>
+		<label class="logo">Discord Light</label>
+    <ul>
+      <li> <a href ="index.html">Accueil</a></li>
+      <li> <a href ="panel.html">Commander</a></li>
+      <li> <a href ="https://discord.gg/pbYBrNhGKV">Notre Discord</a></li>
+      <!-- <li> <a href ="#">Support</a></li> -->
+    </ul>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label>
+  </nav>
+  <!-- fin du header -->
+  <div class="container">
+  <!-- landing -->
+    <!-- section bot js -->
+    <section>
+        <h2> Bot Discord Javascript :</h2>
+        <p class="txt"> Voici les offres :</p> 
+        <p class="offre"><span>Offre 1:</span> Commande de modération. <br> Prix : <span>Gratuit</span></p>
+        <p class="offre"><span>Offre 2:</span> Commande de modération + système d'xp ou économie.<br> Prix : <span>1€</span></p>
+        <p class="offre"><span>Offre 3:</span> Commandes de modération, système de niveau ou économie, système de bienvenue, 3 commandes au choix.<br> Prix : <span>3€50</span></p>
+        <p class="offre"><span>Offre 4:</span> Commandes personnalisées, modération avec auto-modération, système de niveau ou économie, système de bienvenue, 5 commandes au choix, système de giveaway.<br> Prix : <span>5€</span></p>
+        <p id="label" style="margin-top: 15px;">E-mail :
+        <input id="email" type="text" placeholder="koalamaster@gmail.com">
+        <br>
+        <p id="label">Pseudo :
+        <input id="pseudo" type="text" placeholder="KoalaBG">
+        <br>
+        <p id="label">Tag (sans le #) :
+        <input id="tag" type="number" max="9999" min="0" placeholder="2002">
+        <br>
+        <p id="label">Numéro de l'offre :
+        <input id="offre" type="number" max="4" min="1">
+        <br>
+        <p id="label">Pseudo du bot:
+        <input id="pseudo" type="text" placeholder="KoalaBG">
+        <br>
+        <p id="label">Public ou privé :
+        <input id="pubpri" type="text">
+        <br><br>
+        <button id="btn">Envoyer</button>
+    </section>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="js.js"></script>
+</body>
+
+</html>

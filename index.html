@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Discord Light</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      });
+    });
+	</script>
+</head>
+
+<body>
+	<!-- header -->
+	<nav>
+		<label class="logo">Discord Light</label>
+    <ul>
+      <li> <a class="active" href ="index.html">Accueil</a></li>
+      <li> <a href ="panel.html">Commander</a></li>
+      <li> <a href ="https://discord.gg/pbYBrNhGKV">Notre Discord</a></li>
+      <!-- <li> <a href ="#">Support</a></li> -->
+    </ul>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label>
+  </nav>
+  <!-- fin du header -->
+
+  <!-- landing -->
+  <section id="landing">
+    <h2> Bienvenue sur <span> Discord Light !</span></h2>
+    <p>Bienvenue ! j'espère que nos services vous plairons ! Pour rejoindre notre serveur discord cliquez sur le bouton ci dessous :</p>
+    <a href="https://discord.gg/pbYBrNhGKV" target="new_blank">Notre Discord</a>
+  </section>
+      <div class = "container">
+            <div class = "serviceBox">
+                <div class="icon" style="--i:#4eb7ff">
+                    <ion-icon name="color-palette"></ion-icon>
+                </div>
+                <div class = "content">
+                    <h2> Graphiste </h2>
+                    <p> Nous avons des graphistes prêt à faire vos miniatures, logos et autres !</p>
+                </div>
+            </div>
+            <div class = "serviceBox">
+                <div class="icon" style="--i:#fd6494">
+                    <ion-icon name="code-working"></ion-icon>
+                </div>
+                <div class = "content">
+                    <h2>Créateur de robot</h2>
+                    <p>Nous vous créons des robots de A à Z en JavaScript ou en Bot Designer !</p>
+                </div>
+            </div>
+            <div class = "serviceBox">
+                <div class="icon" style="--i:#43f390">
+                    <ion-icon name="help-circle"></ion-icon>
+                </div>
+                <div class = "content">
+                    <h2>Un support actif</h2>
+                    <p>Nous avons un support actif et à l'écoute de toutes vos questions</p>
+                </div>
+            </div>
+            <div class = "serviceBox">
+                <div class="icon" style="--i:#ffb508">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class = "content">
+                    <h2>Nous créons vos serveurs discord !</h2>
+                    <p>Et oui, notre équipe créent votre serveur discord personnalisé !</p>
+                </div>
+            </div>
+            </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/629ffa0490.js" crossorigin="anonymous"></script>
+</body>
+</html>
