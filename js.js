@@ -20,7 +20,7 @@ $(function() {
             if(isNaN($('#offre').val())) return alert("Veuillez entrer un chiffre !");
             if(!$('#offre').val() >= 1 && $('#offre').val() <= 4) return alert("Veuillez entrer une offre entre 1 et 4 !");
             var offreslt = offre[$('#offre').val()]
-            var link = "https://discord.com/api/webhooks/902877956597227541/l4cDzDoo36E0TPNcbjsC-0ASuBBUZxE7uLTJ81_bljX-ZAf8SM2WFXoTKxCZPjTmSgvg"
+            var link = process.env.WEBHOOK
             var username = "FlashWebhook"
             var content = `Offre JavaScript : \n__Email :__ **${$('#email').val()}**\n__Pseudo :__ **${$('#pseudo').val()}#${$('#tag').val()}** | \n__Choix :__ Offre **${$('#offre').val()}** \n__Adresse IP :__ **${json.ip}** \n__Description Choix :__ \n**${offreslt || "Entrée incorrect"}** \n\n Bot **${$('#pubpri').val()}**`
             var avatar = "https://cdn.discordapp.com/avatars/845563600906485761/c7575e78ee12a8f19a6c2264ed1befce.png?size=2048"
